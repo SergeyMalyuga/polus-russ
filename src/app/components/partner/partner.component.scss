@@ -1,0 +1,32 @@
+// partner.component.scss
+@use '../../../styles' as *;
+
+.partner {
+  padding: 4rem 0; text-align: center;
+
+  &__badge {
+    display: inline-block; padding: 0.375rem 1rem; background: rgba(201,162,39,0.15);
+    color: $color-secondary; border-radius: 20px; font-weight: 600; font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__logo { margin-bottom: 2rem; opacity: 0.95; transition: $transition;
+    &:hover { opacity: 1; transform: scale(1.02); }
+  }
+
+  &__title { font-size: 1.75rem; font-weight: 700; color: $color-primary; margin-bottom: 1rem; }
+  &__desc { max-width: 720px; margin: 0 auto 2rem; font-size: 1.05rem; color: #4a5568; }
+
+  &__list {
+    list-style: none; max-width: 500px; margin: 0 auto 2.5rem; text-align: left;
+    li { padding: 0.5rem 0; font-size: 1rem; color: $color-text; }
+  }
+
+  &__wrapper {
+    &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<!-- header.component.html -->
+<header class="header">
+  <div class="container header__inner">
+    <a routerLink="/" class="header__logo" aria-label="Polus Russ — главная">
+      <img src="assets/images/polus-logo.png" alt="Polus Russ" width="200" height="50" loading="eager">
+    </a>
+
+    <nav class="header__nav" aria-label="Основная навигация">
+      <ul class="header__list">
+        <li class="header__item">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Главная</a>
+        </li>
+        <li class="header__item">
+          <a routerLink="/products" routerLinkActive="active">Продукция</a>
+        </li>
+        <li class="header__item">
+          <a routerLink="/partner" routerLinkActive="active">Gerflor</a>
+        </li>
+        <li class="header__item">
+          <a routerLink="/contact" routerLinkActive="active">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

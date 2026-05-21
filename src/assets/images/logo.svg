@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Полярная звезда + компас -->
+  <circle cx="25" cy="25" r="18" fill="#c9a227" opacity="0.15"/>
+  <path d="M25 8 L28 20 L40 20 L30 27 L33 39 L25 32 L17 39 L20 27 L10 20 L22 20 Z" fill="#1a3a5c"/>
+  <!-- Текст -->
+  <text x="55" y="28" font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="#355070">
+    POLUS<tspan fill="#c9a227">RUSS</tspan>
+  </text>
+</svg>

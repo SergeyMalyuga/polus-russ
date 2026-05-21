@@ -1,0 +1,18 @@
+<!-- products.component.html -->
+<section class="products">
+  <div class="container">
+    <h2 class="section-title">Наша продукция</h2>
+    <ul class="products__grid">
+      <li class="product-card fade-in" *ngFor="let product of products; let i = index" [style.animation-delay]="i * 100 + 'ms'">
+        <img [src]="product.image" [alt]="product.name" class="product-card__image" loading="lazy" width="400" height="300">
+        <div class="product-card__content">
+          <h3 class="product-card__title">{{ product.name }}</h3>
+          <p class="product-card__desc">{{ product.desc }}</p>
+          <a href="https://gerflor-russia.ru/" target="_blank" rel="noopener" class="product-card__link">
+            Подробнее на Gerflor →
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
