@@ -2,15 +2,32 @@
 <header class="header">
   <div class="container header__inner">
     <a routerLink="/" class="header__logo" aria-label="Polus Russ — главная">
-      <img src="assets/images/polus-logo.png" alt="Polus Russ" width="200" height="50" loading="eager">
+      <img
+        src="assets/images/polus-logo.png"
+        alt="Polus Russ"
+        width="200"
+        height="50"
+        loading="eager"
+      />
     </a>
-    <nav id="nav-menu" appFocusOnShow [isOnFocus]="isNavOpen()" class="header__nav"
-         [ngClass]="{'header__nav--open': isNavOpen()}"
-         tabindex="-1"
-         aria-label="Основная навигация">
+    <nav
+      id="nav-menu"
+      appFocusOnShow
+      [isOnFocus]="isNavOpen()"
+      class="header__nav"
+      [ngClass]="{ 'header__nav--open': isNavOpen() }"
+      tabindex="-1"
+      aria-label="Основная навигация"
+    >
       <ul class="header__list">
         <li class="header__item">
-          <a (click)="closeNavMenu()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Главная</a>
+          <a
+            (click)="closeNavMenu()"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Главная</a
+          >
         </li>
         <li class="header__item">
           <a (click)="closeNavMenu()" routerLink="/products" routerLinkActive="active">Продукция</a>
@@ -23,9 +40,15 @@
         </li>
       </ul>
     </nav>
-    <button aria-controls="nav-menu" [attr.aria-expanded]="isNavOpen()" aria-haspopup="true" appToggle (toggled)="toggleNavMenu()"
-            class="header__burger" type="button"
-    [ngClass]="{'header__burger--open': isNavOpen()}"
+    <button
+      aria-controls="nav-menu"
+      [attr.aria-expanded]="isNavOpen()"
+      aria-haspopup="true"
+      appToggle
+      (toggled)="toggleNavMenu()"
+      class="header__burger"
+      type="button"
+      [ngClass]="{ 'header__burger--open': isNavOpen() }"
     >
       <span class="header__line-middle"></span>
     </button>

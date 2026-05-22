@@ -1,14 +1,12 @@
 // footer.component.ts
 import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   templateUrl: './footer.component.html',
-  imports: [
-    RouterLink
-  ],
-  styleUrl: './footer.component.scss'
+  imports: [RouterLink],
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {}

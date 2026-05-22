@@ -9,5 +9,5 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent, title: 'Продукция | Polus Russ' },
   { path: 'partner', component: PartnerComponent, title: 'Gerflor | Polus Russ' },
   { path: 'contact', component: ContactComponent, title: 'Контакты | Polus Russ' },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
 ];

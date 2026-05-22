@@ -5,25 +5,50 @@
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
       <div class="form-group">
         <label for="name" class="form-label">Имя *</label>
-        <input id="name" formControlName="name" class="form-input" type="text" placeholder="Ваше имя">
-        <small class="form-error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+        <input
+          id="name"
+          formControlName="name"
+          class="form-input"
+          type="text"
+          placeholder="Ваше имя"
+        />
+        <small
+          class="form-error"
+          *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
+        >
           Введите имя (мин. 2 символа)
         </small>
       </div>
 
       <div class="form-group">
         <label for="email" class="form-label">Email *</label>
-        <input id="email" formControlName="email" class="form-input" type="email" placeholder="you@company.ru">
-        <small class="form-error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+        <input
+          id="email"
+          formControlName="email"
+          class="form-input"
+          type="email"
+          placeholder="you@company.ru"
+        />
+        <small
+          class="form-error"
+          *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
+        >
           Введите корректный email
         </small>
       </div>
 
       <div class="form-group">
         <label for="message" class="form-label">Сообщение *</label>
-        <textarea id="message" formControlName="message" class="form-input form-input--textarea"
-                  placeholder="Расскажите о вашем проекте..."></textarea>
-        <small class="form-error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+        <textarea
+          id="message"
+          formControlName="message"
+          class="form-input form-input--textarea"
+          placeholder="Расскажите о вашем проекте..."
+        ></textarea>
+        <small
+          class="form-error"
+          *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
+        >
           Сообщение должно содержать не менее 10 символов
         </small>
       </div>

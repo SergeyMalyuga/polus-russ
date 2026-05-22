@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-partner',
   standalone: true,
   templateUrl: './partner.component.html',
-  styleUrl: './partner.component.scss'
+  styleUrl: './partner.component.scss',
 })
 export class PartnerComponent {}

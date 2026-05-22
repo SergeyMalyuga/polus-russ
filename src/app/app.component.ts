@@ -14,6 +14,6 @@ import { FooterComponent } from './components/footer/footer.component';
     </main>
     <app-footer />
   `,
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {}
