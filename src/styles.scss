@@ -1,20 +1,15 @@
-// 🔹 Переменные (легко кастомизировать)
-$color-primary: #1a3a5c;     // глубокий синий — надёжность
-$color-secondary: #c9a227;   // золотой акцент — премиум
-$color-text: #2d3748;
-$color-bg: #ffffff;
-$color-bg-alt: #f8fafc;
-$font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$container-max: 1200px;
-$transition: all 0.25s ease-in-out;
+@use './styles/variables' as variables;
 
-// 🔹 Сбросы и базовые стили
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: $font-base;
-  color: $color-text;
-  background: $color-bg;
+  font-family: variables.$font-family-primary;
+  color: variables.$color-text;
+  background: variables.$color-bg;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,7 +17,7 @@ body {
 // 🔹 Утилиты
 .container {
   width: 100%;
-  max-width: $container-max;
+  max-width: variables.$container-max;
   margin: 0 auto;
   padding: 0 2rem;
 
@@ -31,17 +26,34 @@ body {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0);
-  white-space: nowrap; border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 // 🔹 Анимации
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.fade-in { animation: fadeIn 0.4s ease-out forwards; }
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
