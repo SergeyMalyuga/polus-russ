@@ -1,7 +1,7 @@
 // contact.component.scss
-@use '../../../styles' as *;
+@use '../../../styles/variables' as variables;
 
-.contact { padding: 4rem 0; background: $color-bg-alt; }
+.contact { padding: 4rem 0; background: variables.$color-bg-alt; }
 
 .contact__inner {
   display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;
@@ -10,11 +10,11 @@
 
 .contact__form {
   .form-group { margin-bottom: 1.25rem; }
-  .form-label { display: block; font-weight: 500; margin-bottom: 0.5rem; color: $color-text; }
+  .form-label { display: block; font-weight: 500; margin-bottom: 0.5rem; color: variables.$color-text; }
   .form-input {
     width: 100%; padding: 0.75rem 1rem; border: 1px solid #cbd5e1; border-radius: 6px;
-    font-size: 1rem; transition: $transition;
-    &:focus { outline: none; border-color: $color-primary; box-shadow: 0 0 0 3px rgba(26,58,92,0.1); }
+    font-size: 1rem; transition: variables.$transition;
+    &:focus { outline: none; border-color: variables.$color-primary; box-shadow: 0 0 0 3px rgba(26,58,92,0.1); }
     &--textarea { min-height: 120px; resize: vertical; }
   }
   .form-error { color: #e53e3e; font-size: 0.875rem; margin-top: 0.25rem; display: block; }
@@ -22,5 +22,5 @@
 
 .contact__info {
   background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  p { margin: 0.75rem 0; a { color: $color-primary; text-decoration: none; &:hover { text-decoration: underline; } } }
+  p { margin: 0.75rem 0; a { color: variables.$color-primary; text-decoration: none; &:hover { text-decoration: underline; } } }
 }

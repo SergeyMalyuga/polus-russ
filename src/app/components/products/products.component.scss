@@ -1,14 +1,13 @@
-// products.component.scss
-@use '../../../styles' as *;
+@use '../../../styles/variables' as variables;
 
-.products { padding: 4rem 0; background: $color-bg-alt; }
+.products { padding: 4rem 0; background: variables.$color-bg-alt; }
 
 .section-title {
-  text-align: center; font-size: 2rem; font-weight: 700; color: $color-primary;
+  text-align: center; font-size: 2rem; font-weight: 700; color: variables.$color-primary;
   margin-bottom: 3rem; position: relative;
   &::after {
     content: ''; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%);
-    width: 60px; height: 3px; background: $color-secondary; border-radius: 2px;
+    width: 60px; height: 3px; background: variables.$color-secondary; border-radius: 2px;
   }
 }
 
@@ -20,7 +19,7 @@
 
 .product-card {
   background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  transition: $transition; display: flex; flex-direction: column;
+  transition: variables.$transition; display: flex; flex-direction: column;
 
   &:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
 
@@ -31,11 +30,11 @@
 
   &__content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
 
-  &__title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: $color-primary; }
+  &__title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: variables.$color-primary; }
   &__desc { font-size: 0.95rem; color: #4a5568; margin-bottom: 1.25rem; flex: 1; }
 
   &__link {
-    color: $color-primary; text-decoration: none; font-weight: 500; font-size: 0.95rem;
-    &:hover { color: $color-secondary; }
+    color: variables.$color-primary; text-decoration: none; font-weight: 500; font-size: 0.95rem;
+    &:hover { color: variables.$color-secondary; }
   }
 }

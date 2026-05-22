@@ -1,8 +1,7 @@
-// footer.component.scss
-@use '../../../styles' as *;
+@use '../../../styles/variables' as variables;
 
 .footer {
-  background: $color-primary; color: rgba(255,255,255,0.9); padding: 2.5rem 0 1.5rem;
+  background: variables.$color-primary; color: rgba(255,255,255,0.9); padding: 2.5rem 0 1.5rem;
   font-size: 0.95rem;
 
   &__inner {
@@ -13,8 +12,8 @@
 
   &__links {
     display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;
-    a { color: #fff; text-decoration: none; opacity: 0.9; transition: $transition;
-      &:hover { opacity: 1; color: $color-secondary; }
+    a { color: #fff; text-decoration: none; opacity: 0.9; transition: variables.$transition;
+      &:hover { opacity: 1; color: variables.$color-secondary; }
     }
   }
 
