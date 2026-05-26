@@ -1,67 +1,65 @@
 <!-- contact.component.html -->
 <section class="contact">
   <div class="container contact__inner">
-    <!--   <div class="contact__wrapper-title">
-      <h2 class="contact__title">Связаться с нами</h2>
-    </div>-->
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
-      <div class="contact__wrapper-title">
-        <h2 class="contact__title">Связаться с нами</h2>
-      </div>
-      <div class="form-group">
-        <label for="name" class="form-label">Имя *</label>
-        <input
-          id="name"
-          formControlName="name"
-          class="form-input"
-          type="text"
-          placeholder="Ваше имя"
-        />
-        @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
-          <small class="form-error">Введите имя (мин. 2 символа)</small>
-        }
-      </div>
+    <div class="contact__content">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact__form">
+        <div class="contact__wrapper-title">
+          <h2 class="contact__title">Связаться с нами</h2>
+        </div>
+        <div class="form-group">
+          <label for="name" class="form-label">Имя *</label>
+          <input
+            id="name"
+            formControlName="name"
+            class="form-input"
+            type="text"
+            placeholder="Ваше имя"
+          />
+          @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
+            <small class="form-error">Введите имя (мин. 2 символа)</small>
+          }
+        </div>
 
-      <div class="form-group">
-        <label for="email" class="form-label">Email *</label>
-        <input
-          id="email"
-          formControlName="email"
-          class="form-input"
-          type="email"
-          placeholder="you@company.ru"
-        />
-        @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
-          <small class="form-error">Введите корректный email</small>
-        }
-      </div>
-      <div class="form-group">
-        <label for="message" class="form-label">Сообщение *</label>
-        <textarea
-          id="message"
-          formControlName="message"
-          class="form-input form-input--textarea"
-          placeholder="Расскажите о вашем проекте..."
-        ></textarea>
-        @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
-          <small class="form-error">Сообщение не менее 10 символов</small>
-        }
-      </div>
-      <button type="submit" class="btn btn--primary" [disabled]="contactForm.invalid">
-        Отправить заявку
-      </button>
-    </form>
+        <div class="form-group">
+          <label for="email" class="form-label">Email *</label>
+          <input
+            id="email"
+            formControlName="email"
+            class="form-input"
+            type="email"
+            placeholder="you@company.ru"
+          />
+          @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
+            <small class="form-error">Введите корректный email</small>
+          }
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Сообщение *</label>
+          <textarea
+            id="message"
+            formControlName="message"
+            class="form-input form-input--textarea"
+            placeholder="Расскажите о вашем проекте..."
+          ></textarea>
+          @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
+            <small class="form-error">Сообщение не менее 10 символов</small>
+          }
+        </div>
+        <button type="submit" class="btn btn--primary" [disabled]="contactForm.invalid">
+          Отправить заявку
+        </button>
+      </form>
 
-    <address class="contact__info">
-      <p><strong>Полюс Русс</strong></p>
-      <p>
-        📍 108802 г.Москва, вн. тер. г. Муниципальный Округ Коммунарка, квартал 17, дом 68, строение
-        1.
-      </p>
-      <p>✉️ <a href="mailto:polus-russ@inbox.ru">polus-russ&#64;inbox.ru</a></p>
-      <p>📞 <a href="tel:+79588060430">+7 (958) 806-0430</a> - Москва</p>
-      <p>📞 <a href="tel:+79785874711">+7 (978) 587-4711</a> - Республика Крым</p>
-    </address>
-    <div class="contact__decoration-image" role="presentation"></div>
+      <address class="contact__info">
+        <p><strong>Полюс Русс</strong></p>
+        <p>
+          📍 108802 г.Москва, вн. тер. г. Муниципальный Округ Коммунарка, квартал 17, дом 68, строение
+          1.
+        </p>
+        <p>✉️ <a href="mailto:polus-russ@inbox.ru">polus-russ&#64;inbox.ru</a></p>
+        <p>📞 <a href="tel:+79588060430">+7 (958) 806-0430</a> - Москва</p>
+        <p>📞 <a href="tel:+79785874711">+7 (978) 587-4711</a> - Республика Крым</p>
+      </address>
+    </div>
   </div>
 </section>
