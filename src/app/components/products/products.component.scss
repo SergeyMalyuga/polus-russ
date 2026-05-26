@@ -1,17 +1,29 @@
 @use '../../../styles/variables' as variables;
 
 .products {
-  padding: 4rem 0;
+  padding: 74px 0;
   background: variables.$color-bg-alt;
+  min-height: calc(100vh - 140px);
+  background: url('/assets/images/products-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    @media (width <= 1024px) {
+      padding-top: 40px;
+    }
+  }
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: variables.$color-primary;
+  color: white;
+  opacity: 0.9;
   margin-bottom: 3rem;
   position: relative;
+
   &::after {
     content: '';
     position: absolute;
@@ -38,17 +50,19 @@
 }
 
 .product-card {
-  background: #fff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   transition: variables.$transition;
   display: flex;
   flex-direction: column;
+  background: rgb(255 255 255 / 0.5);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.9);
   }
 
   &__image {
@@ -86,6 +100,8 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
+    transition: color 0.3s ease;
+
     &:hover {
       color: variables.$color-secondary;
     }
