@@ -1,7 +1,7 @@
 @use '../../../styles/variables' as variables;
 
 .partner {
-  padding: 74px 0 0;
+  padding: 74px 0;
   background: url('/assets/images/partner-bg-3.jpg') center/cover no-repeat;
   min-height: calc(100vh - 140px);
   text-align: center;
@@ -13,6 +13,10 @@
     backdrop-filter: blur(6px);
     border-radius: 20px;
     padding: 40px 10px;
+
+    @media (width <= 1024px) {
+      padding-top: 40px;
+    }
   }
 
   &__badge {
