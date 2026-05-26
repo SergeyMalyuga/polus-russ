@@ -1,8 +1,12 @@
 @use '../../../styles/variables' as variables;
 
 .partner {
-  padding: 4rem 0;
+  padding: 74px 0;
+  background: url('/assets/images/partner-bg-3.jpg') center/cover no-repeat;
+  min-height: calc(100vh - 140px);
   text-align: center;
+  display: flex;
+  align-items: center;
 
   &__badge {
     display: inline-block;
@@ -28,14 +32,15 @@
   &__title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: variables.$color-primary;
+    color: white;
+    opacity: 0.9;
     margin-bottom: 1rem;
   }
   &__desc {
     max-width: 720px;
     margin: 0 auto 2rem;
     font-size: 1.05rem;
-    color: #4a5568;
+    color: #bdc2c7;
   }
 
   &__list {
@@ -46,7 +51,7 @@
     li {
       padding: 0.5rem 0;
       font-size: 1rem;
-      color: variables.$color-text;
+      color: #bdc2c7;
     }
   }
 
