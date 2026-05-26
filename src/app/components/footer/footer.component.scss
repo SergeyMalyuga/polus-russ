@@ -1,7 +1,8 @@
 @use '../../../styles/variables' as variables;
 
 .footer {
-  background: variables.$color-primary;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  border-top: 2px solid #c9a227;
   color: rgba(255, 255, 255, 0.9);
   padding: 2.5rem 0 1.5rem;
   font-size: 0.95rem;
