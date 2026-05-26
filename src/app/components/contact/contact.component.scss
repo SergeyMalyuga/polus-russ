@@ -49,12 +49,14 @@
     backdrop-filter: blur(6px);
     border-radius: 20px;
 
-    @media (width <= 1024px) {
-      padding-top: 40px;
-    }
-
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
+    }
+  }
+
+  &__inner {
+    @media (width <= 1024px) {
+      padding-top: 40px;
     }
   }
 }
