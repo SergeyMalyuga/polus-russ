@@ -1,0 +1,58 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mat-mdc-dialog-content {
+  background: linear-gradient(115deg, #ff8a5c, #ff6b4a, #ffb347);
+  padding: 24px;
+  overflow: visible;
+  border-radius: 20px;
+}
+
+.mat-dialog-container {
+  position: relative;
+  overflow: visible;
+}
+
+.mat-mdc-dialog-actions {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.certificate-dialog__close {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255 255 255 / 0.8);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #1a1a1a;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: rgba(255 255 255 / 0.4);
+  }
+}
