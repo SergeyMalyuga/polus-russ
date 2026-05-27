@@ -2,7 +2,7 @@
 <section class="partner">
   <div class="container partner__inner">
     <div class="partner__content">
-      <div class="partner__wrapper-logo">
+      <a href="https://gerflor-russia.ru/" target="_blank" rel="noreferrer noopener" class="partner__wrapper-logo">
         <img
           src="/assets/images/gerflor_logo.svg"
           alt="Gerflor Russia"
@@ -10,7 +10,7 @@
           width="220"
           height="60"
         />
-      </div>
+      </a>
       <h2 class="partner__title">Gerflor — мировой лидер в области напольных покрытий</h2>
       <p class="partner__desc">
         Полюс Русс является эксклюзивным партнёром Gerflor - Россия на территории Республики Крым. Мы
@@ -22,9 +22,7 @@
         <li>✅ Образцы и каталоги в наличии</li>
         <li>✅ Индивидуальные условия для проектов</li>
       </ul>
-      <a href="https://gerflor-russia.ru/" target="_blank" rel="noopener" class="btn btn--primary">
-        Перейти на сайт Gerflor Russia
-      </a>
+      <button (click)="dialogService.openDialog(CertificateDialog, '/assets/images/certificate-gerflor.jpg')" class="btn btn--primary">Сертификат</button>
     </div>
   </div>
 </section>

@@ -27,10 +27,7 @@
   }
 
   &__logo {
-    margin-bottom: 2rem;
     display: block;
-    border-radius: 10px;
-    background: rgb(255 255 255 / 45%);
   }
 
   &__title {
@@ -66,6 +63,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: variables.$transition;
+      border-radius: 10px;
+      background: rgb(255 255 255 / 45%);
+      width: max-content;
+      margin: 0 auto 2rem;
+
+      &:hover {
+        transform: translateY(-2px);
+        background: rgb(255 255 255 / 35%);
+      }
     }
   }
 
