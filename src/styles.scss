@@ -80,6 +80,9 @@ body {
   transition: variables.$transition;
   cursor: pointer;
   border: 2px solid transparent;
+  font-size: 18px;
+  font-family: variables.$font-family-primary;
+  line-height: 1.6;
 
   &:disabled {
     opacity: 0.5;
@@ -123,4 +126,8 @@ body {
 
 .fade-in {
   animation: fadeIn 0.4s ease-out forwards;
+}
+
+.mat-mdc-dialog-surface {
+  overflow: visible !important;
 }
