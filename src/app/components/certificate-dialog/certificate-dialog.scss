@@ -1,10 +1,11 @@
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .mat-mdc-dialog-content {
+  display: flex;
   background: linear-gradient(115deg, #ff8a5c, #ff6b4a, #ffb347);
   padding: 12px;
   overflow: visible;
