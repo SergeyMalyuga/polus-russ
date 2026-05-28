@@ -6,9 +6,9 @@ img {
 
 .mat-mdc-dialog-content {
   background: linear-gradient(115deg, #ff8a5c, #ff6b4a, #ffb347);
-  padding: 24px;
+  padding: 12px;
   overflow: visible;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .mat-dialog-container {
@@ -18,8 +18,8 @@ img {
 
 .mat-mdc-dialog-actions {
   position: absolute;
-  top: -30px;
-  right: -30px;
+  top: -35px;
+  right: -35px;
 }
 
 .certificate-dialog__close {
